@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <style>
+        #carousel{
+            margin-top: 8em;
+            margin-bottom: 1em;
+        }
+
+        #carousel .carousel-caption {
+            bottom: 3em;
+        }
+        #carousel .carousel-caption h5 {
+            font-size: 2.5em;
+            text-shadow: #000000 2px 2px;
+        }
+        #carousel .carousel-item{
+            height: 10%;
+        }
+        #carousel img{
+            display: flex;
+            height: 30em;
+            object-fit: cover;
+        }
+
+        body{
+            background-color: white;
+        }
+        .b1{
+            height: 550px;
+        }
+        .carousel-item img{
+            filter: brightness(65%);
+        }
+        @media screen and (max-width:768px){
+          .b1{
+            height: 250px;
+          }
+            
+        }
+        .cards{
+          width: 280px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./img/pepsilogo.png" alt="Bootstrap" width="70" height="70">
+              </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Produtos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Clientes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Sobre</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Fale Conosco</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+</body>
+
+<!-- Carousel -->
+<div id="carousel" class="carousel slide" data-bs-ride="false">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true"
+      aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/pepsi01.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>VENHA SABOREAR</h5>
+          <p>Pepsi Zero, um convite para aqueles que amam desfrutar do sabor único de Pepsi.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="img/pepsinew.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>PEPSICO</h5>
+          <p>Opa, abriu a geladeira e tá sem Pepsi? Não se preocupe! Peça seu produto PepsiCo no Na Sua Casa e receba suas bebidas favoritas no dia seguinte!*</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="img/pepsi3.webp" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>GARRAFA VIRTUAL</h5>
+          <p>Esqueceu sua garrafa retornável em casa? Não se preocupe! Baixe aqui o cupom da Garrafa Virtual e pague somente o líquido.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+  <!-- Cards -->
+  <section class="container my-5">
+  <div class="row row-cols-1 row-cols-md-3 g-2">
+    <div class="col">
+      <div class="card mx-auto">
+        <img src="./img/psicard1.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <a href="#" class="btn btn-outline-primary">Saiba +</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+        <div class="card mx-auto">
+        <img src="./img/pepsicard2.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          <a href="#" class="btn btn-outline-primary">Saiba +</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+        <div class="card mx-auto">
+        <img src="./img/aaaaaaa.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+          <a href="#" class="btn btn-outline-primary">Saiba +</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+  
+  <!-- Accordion -->
+
+  <section class="container">
+    <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Accordion Item #1
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Accordion Item #2
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Accordion Item #3
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <footer>
+      <section class="container-fluid mt-3 border bg-light p-4">
+        <div class="container text-center">
+            <div class="row">
+              <div class="col">
+              <img src="./img/instagram.svg" alt="" width="30px">
+              </div>
+              <div class="col">
+                <img src="./img/whatsapp.svg" alt="" width="30px">
+              </div>
+              <div class="col">
+                <img src="./img/facebook.svg" alt="" width="30px">
+              </div>
+            </div>
+          </div>
+      </section>
+  </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+</html>
